@@ -84,7 +84,7 @@
         android:textColor="@color/white"
         android:text="¿Olvidaste tu contraseña?" />
     <TextView
-        android:id="@+id/create"
+        android:id="@+id/txt_create"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
