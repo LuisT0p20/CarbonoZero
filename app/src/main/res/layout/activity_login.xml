@@ -94,10 +94,11 @@
         android:textColor="@color/white"
         android:text="Crear usuario" />
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="200dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:text="INGRESAR"
         android:backgroundTint="@color/button"
         ></Button>
