@@ -2,4 +2,9 @@
     <string name="app_name">CarbonoZero</string>
     <string name="bebidas_pregunta">¿Qué bebidas sueles consumir a la semana?</string>
     <string name="Seleccione_repuesta">Seleccione las opciones</string>
+    <string name="box_gaseosas">Gaseosas</string>
+    <string name="box_refrescos">Refrescos</string>
+    <string name="box_jugos">Jugo de frutas</string>
+    <string name="box_te">Té</string>
+    <string name="box_energizantes">Energizantes</string>
 </resources>
