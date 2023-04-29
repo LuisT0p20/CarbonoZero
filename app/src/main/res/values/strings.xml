@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CarbonoZero</string>
+    <string name="bebidas_pregunta">¿Qué bebidas sueles consumir a la semana?</string>
+    <string name="Seleccione_repuesta">Seleccione las opciones</string>
 </resources>
