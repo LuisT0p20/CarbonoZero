@@ -20,7 +20,7 @@ public class Starting extends AppCompatActivity {
         loading = findViewById(R.id.loading);
         String url_loading = "https://usagif.com/wp-content/uploads/loading-25.gif";
         Uri urlplace = Uri.parse(url_loading);
-        Glide.with(getApplicationContext()).load(url_loading).into(loading);
+        Glide.with(getApplicationContext()).load(urlplace).into(loading);
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
