@@ -12,15 +12,15 @@ import com.bumptech.glide.Glide;
 
 public class Starting extends AppCompatActivity {
     Handler handler = new Handler();
-    private ImageView loading;
+    private ImageView Loading;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting);
-        loading = findViewById(R.id.loading);
+        Loading = findViewById(R.id.loading);
         String url_loading = "https://usagif.com/wp-content/uploads/loading-25.gif";
         Uri urlplace = Uri.parse(url_loading);
-        Glide.with(getApplicationContext()).load(url_loading).into(loading);
+        Glide.with(getApplicationContext()).load(url_loading).into(Loading);
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {

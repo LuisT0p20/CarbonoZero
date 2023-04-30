@@ -6,11 +6,11 @@
                 android:radius="15dp"
                 ></corners>
             <stroke
-                android:color="@color/Checkbox"
+                android:color="#18362F"
                 android:width="15dp"
                 ></stroke>
             <solid
-                android:color="@color/Checkbox"
+                android:color="#18362F"
                 ></solid>
         </shape>
     </item>
