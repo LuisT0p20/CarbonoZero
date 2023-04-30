@@ -14,8 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="68dp"
+        android:fontFamily="sans-serif-medium"
         android:text="CarbonoZero"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="50dp"
         android:textStyle="bold" />
 
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:textSize="35dp"
         android:textStyle="bold"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="35dp"
         android:text="Usuario" />
     <EditText
@@ -59,7 +60,7 @@
         android:layout_height="wrap_content"
         android:textSize="35dp"
         android:textStyle="bold"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="30dp"
         android:text="Contraseña" />
     <EditText
@@ -81,7 +82,7 @@
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:textStyle="italic"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:text="¿Olvidaste tu contraseña?" />
     <TextView
         android:id="@+id/txt_create"
@@ -91,7 +92,7 @@
         android:gravity="center"
         android:textSize="20dp"
         android:textStyle="italic"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:text="Crear usuario" />
     <Button
         android:id="@+id/btn_login"
