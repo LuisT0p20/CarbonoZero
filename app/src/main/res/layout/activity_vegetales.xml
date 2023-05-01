@@ -43,7 +43,7 @@
             android:background="@drawable/redondeo_vegetales">
 
             <CheckBox
-                android:id="@+id/box_gaseosas"
+                android:id="@+id/box_lechuga"
                 style="@android:style/Widget.CompoundButton.CheckBox"
                 android:layout_width="258dp"
                 android:layout_height="80dp"
@@ -68,7 +68,7 @@
             android:background="@drawable/redondeo_vegetales">
 
             <CheckBox
-                android:id="@+id/box_energizantes"
+                android:id="@+id/box_pepino"
                 android:layout_width="258dp"
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
@@ -91,7 +91,7 @@
             android:background="@drawable/redondeo_vegetales">
 
             <CheckBox
-                android:id="@+id/box_jugos"
+                android:id="@+id/box_col"
                 android:layout_width="258dp"
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
@@ -113,7 +113,7 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/redondeo_vegetales">
             <CheckBox
-                android:id="@+id/box_refrescos"
+                android:id="@+id/box_betarraga"
                 android:layout_width="258dp"
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
@@ -135,7 +135,7 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/redondeo_vegetales">
             <CheckBox
-                android:id="@+id/box_te"
+                android:id="@+id/box_espinaca"
                 android:layout_width="258dp"
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
