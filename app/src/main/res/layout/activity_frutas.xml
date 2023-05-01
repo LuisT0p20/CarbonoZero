@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/bebidas_pregunta"
+        android:text="@string/frutas_pregunta"
         android:textAlignment="center"
         android:textColor="#8C6C54"
         android:textSize="30sp"
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo">
+            android:background="@drawable/redondeo_fruta">
 
             <CheckBox
                 android:id="@+id/box_gaseosas"
@@ -49,15 +49,15 @@
                 android:layout_height="80dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginBottom="15dp"
-                android:text="@string/box_gaseosas"
-                android:textColor="#8E605C"
+                android:text="@string/box_mandarina"
+                android:textColor="#B55A0B"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/gaseosas"></ImageView>
+                android:src="@drawable/mandarina"></ImageView>
         </LinearLayout>
 
         <LinearLayout
@@ -65,7 +65,7 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo">
+            android:background="@drawable/redondeo_fruta">
 
             <CheckBox
                 android:id="@+id/box_energizantes"
@@ -73,14 +73,14 @@
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginStart="15dp"
-                android:text="@string/box_energizantes"
-                android:textColor="#E0574A"
+                android:text="@string/box_fresa"
+                android:textColor="#F15D38"
                 android:textSize="25sp"
                 android:textStyle="bold" ></CheckBox>
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/energizante"></ImageView>
+                android:src="@drawable/fresa"></ImageView>
         </LinearLayout>
 
         <LinearLayout
@@ -88,7 +88,7 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo">
+            android:background="@drawable/redondeo_fruta">
 
             <CheckBox
                 android:id="@+id/box_jugos"
@@ -96,14 +96,14 @@
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginStart="15dp"
-                android:text="@string/box_jugos"
-                android:textColor="#CDE060"
+                android:text="@string/box_manzana"
+                android:textColor="#E82A14"
                 android:textSize="25sp"
                 android:textStyle="bold" />
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/jugofrutas"></ImageView>
+                android:src="@drawable/manzana"></ImageView>
         </LinearLayout>
 
         <LinearLayout
@@ -111,21 +111,21 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo">
+            android:background="@drawable/redondeo_fruta">
             <CheckBox
                 android:id="@+id/box_refrescos"
                 android:layout_width="258dp"
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginStart="15dp"
-                android:text="@string/box_refrescos"
-                android:textColor="#77A8E0"
+                android:text="@string/box_platanos"
+                android:textColor="#ED8A11"
                 android:textSize="25sp"
                 android:textStyle="bold" />
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/refresco"></ImageView>
+                android:src="@drawable/platanos"></ImageView>
         </LinearLayout>
 
         <LinearLayout
@@ -133,21 +133,21 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo">
+            android:background="@drawable/redondeo_fruta">
             <CheckBox
                 android:id="@+id/box_te"
                 android:layout_width="258dp"
                 android:layout_height="80dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginStart="15dp"
-                android:text="@string/box_te"
-                android:textColor="#859431"
+                android:text="@string/box_sandia"
+                android:textColor="#E42249"
                 android:textSize="25sp"
                 android:textStyle="bold" />
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/te"></ImageView>
+                android:src="@drawable/sandia"></ImageView>
         </LinearLayout>
 
     </LinearLayout>

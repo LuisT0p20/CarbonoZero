@@ -1,10 +1,34 @@
 <resources>
     <string name="app_name">CarbonoZero</string>
     <string name="bebidas_pregunta">¿Qué bebidas sueles consumir a la semana?</string>
+    <string name="carnes_pregunta">¿Qué tipos de carne sueles consumir a la semana?</string>
+    <string name="frutas_pregunta">¿Qué frutas sueles consumir a la semana?</string>
+    <string name="vegetales_pregunta">¿Qué vegetales sueles consumir a la semana?</string>
+    <string name="cereales_pregunta">¿Qué cereales sueles consumir a la semana?</string>
     <string name="Seleccione_repuesta">Seleccione las opciones</string>
     <string name="box_gaseosas">Gaseosas</string>
     <string name="box_refrescos">Refrescos</string>
     <string name="box_jugos">Jugo de frutas</string>
     <string name="box_te">Té</string>
     <string name="box_energizantes">Energizantes</string>
+    <string name="box_pescado">Pescado</string>
+    <string name="box_pollo">Pollo</string>
+    <string name="box_res">Res</string>
+    <string name="box_cerdo">Cerdo</string>
+    <string name="box_vegano">No consumo carne</string>
+    <string name="box_mandarina">Mandarina</string>
+    <string name="box_platanos">Platanos</string>
+    <string name="box_manzana">Manzana</string>
+    <string name="box_fresa">Fresa</string>
+    <string name="box_sandia">Sandia</string>
+    <string name="box_lechuga">Lechuga</string>
+    <string name="box_col">Col</string>
+    <string name="box_pepino">Pepino</string>
+    <string name="box_betarraga">Betarraga</string>
+    <string name="box_espinaca">Espinaca</string>
+    <string name="box_arroz">Arroz</string>
+    <string name="box_trigo">Trigo</string>
+    <string name="box_cebada">Cebada</string>
+    <string name="box_quinua">Quinua</string>
+    <string name="box_avena">Avena</string>
 </resources>

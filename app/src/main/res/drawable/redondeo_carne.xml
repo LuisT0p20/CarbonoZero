@@ -6,11 +6,11 @@
                 android:radius="15dp"
                 ></corners>
             <stroke
-                android:color="#D1E0D1"
+                android:color="#E1C7CE"
                 android:width="5dp"
                 ></stroke>
             <solid
-                android:color="#E1F3E0"
+                android:color="#DDCBCD"
                 ></solid>
         </shape>
     </item>
