@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/my_shape"
     android:orientation="vertical"
+    android:background="#b8fd99"
     tools:context=".Login">
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginTop="68dp"
         android:fontFamily="sans-serif-medium"
         android:text="CarbonoZero"
-        android:textColor="@color/black"
+        android:textColor="#14c3a2"
         android:textSize="50dp"
         android:textStyle="bold" />
 
@@ -33,75 +33,62 @@
             android:src="@drawable/logo" />
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginTop="35dp"
-        android:text="Usuario" />
     <EditText
-        android:layout_marginTop="10dp"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:textSize="23dp"
-        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:padding="10dp"
+        android:textColor="#595b5a"
         android:hint="Ingresa usuario"
-        android:background="@drawable/rounded_corners"></EditText>
+        android:textColorHint="#595b5a"
+        android:background="@drawable/redondeo_input"></EditText>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginTop="30dp"
-        android:text="Contraseña" />
     <EditText
-        android:layout_marginTop="10dp"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:inputType="textPassword"
-        android:textSize="23dp"
-        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:padding="10dp"
+        android:textColor="#595b5a"
         android:hint="Ingresa contraseña"
-        android:background="@drawable/rounded_corners"></EditText>
+        android:textColorHint="#595b5a"
+        android:background="@drawable/redondeo_input"></EditText>
 
     <TextView
         android:id="@+id/forget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
         android:textStyle="italic"
-        android:textColor="@color/black"
+        android:textColor="#14c3a2"
         android:text="¿Olvidaste tu contraseña?" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="350dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:background="@drawable/redondeo_vegetales"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="INGRESAR"
+        ></Button>
+
     <TextView
         android:id="@+id/txt_create"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="italic"
-        android:textColor="@color/black"
+        android:textColor="#14c3a2"
         android:text="Crear usuario" />
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="200dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:layout_height="50dp"
-        android:text="INGRESAR"
-        android:backgroundTint="@color/button"
-        ></Button>
-
 </LinearLayout>
