@@ -54,4 +54,10 @@
         android:layout_gravity="center"
         android:background="@drawable/redondeo_vegetales"
         ></ImageButton>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/txtResultado"
+        android:textSize="40dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"></TextView>
 </LinearLayout>

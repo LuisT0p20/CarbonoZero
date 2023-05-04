@@ -161,7 +161,7 @@
         android:paddingRight="15dp"
         >
         <ImageButton
-            android:id="@+id/botonsiguiente"
+            android:id="@+id/botonsiguiente4"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:background="@drawable/redondeo"

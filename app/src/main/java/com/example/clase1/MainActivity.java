@@ -23,7 +23,8 @@ public class    MainActivity extends AppCompatActivity {
         cv_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(MainActivity.this, Bebidas.class);
+                startActivity(i);
             }
         });
         cv_analisis.setOnClickListener(new View.OnClickListener() {
