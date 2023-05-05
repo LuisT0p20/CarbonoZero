@@ -17,6 +17,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.clase1.Utilidades.Util;
 
 import org.json.JSONObject;
 import android.text.TextUtils;
@@ -64,7 +65,7 @@ public class Login extends AppCompatActivity {
         String us = edt_usuario.getText().toString();
         String co = edt_contra.getText().toString();
 
-        String url = "http://192.168.1.84:8080/api/verificar_usuario.php?u_usuario=" + us +
+        String url = Util.RUTA + "verificar_usuario.php?u_usuario=" + us +
                 "&u_contra=" + co;
         url=url.replace(" ","%20");
 
@@ -95,5 +96,4 @@ public class Login extends AppCompatActivity {
                 });
         requestQueue.add(jsonObjectRequest);
     }
-
 }

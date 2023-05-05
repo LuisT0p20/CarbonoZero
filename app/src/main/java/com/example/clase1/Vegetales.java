@@ -53,8 +53,8 @@ public class Vegetales extends AppCompatActivity {
         Bundle enviarDato = new Bundle();
         enviarDato.putFloat("keyDatos",consumo);
 
-        Intent i = new Intent( Vegetales.this, Resultados.class);
-        i.putExtras(enviarDato);
+        Intent i = new Intent( Vegetales.this, PantallaCarga.class);
+            i.putExtras(enviarDato);
         startActivity(i);
     }
 }

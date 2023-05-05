@@ -22,6 +22,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import org.json.JSONObject;
 import com.example.clase1.R;
+import com.example.clase1.Utilidades.Util;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -76,7 +77,7 @@ public class CreateUser extends AppCompatActivity {
         String usu = u_usuario.getText().toString();
         String con = u_contra.getText().toString();
 
-        String url = "http://192.168.1.84:8080/api/create_user.php?u_nombre=" + nom +
+        String url = Util.RUTA + "create_user.php?u_nombre=" + nom +
                      "&u_apellido=" + ape +"&u_telefono=" + tel+"&u_usuario="+ usu+"&u_contra="+ con;
         url=url.replace(" ","%20");
 
