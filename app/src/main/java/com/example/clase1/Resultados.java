@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class Resultados extends AppCompatActivity {
+
     TextView txtResultado;
     Float consumo;
     @Override
@@ -21,5 +22,8 @@ public class Resultados extends AppCompatActivity {
         String resultado = consumo.toString();
 
         txtResultado.setText(resultado);
+
+
+
     }
 }

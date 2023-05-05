@@ -34,6 +34,7 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
+        android:id="@+id/edt_usuario"
         android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="50dp"
@@ -46,6 +47,7 @@
         android:background="@drawable/redondeo_input"></EditText>
 
     <EditText
+        android:id="@+id/edt_contra"
         android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="50dp"
