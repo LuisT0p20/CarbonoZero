@@ -78,7 +78,7 @@ public class CreateUser extends AppCompatActivity {
         String con = u_contra.getText().toString();
 
         String url = Util.RUTA + "create_user.php?u_nombre=" + nom +
-                     "&u_apellido=" + ape +"&u_telefono=" + tel+"&u_usuario="+ usu+"&u_contra="+ con;
+                "&u_apellido=" + ape +"&u_telefono=" + tel+"&u_usuario="+ usu+"&u_contra="+ con;
         url=url.replace(" ","%20");
 
         jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url,null, this::onResponse, this::onErrorResponse);
