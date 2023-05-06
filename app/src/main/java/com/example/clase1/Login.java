@@ -38,14 +38,15 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         btn_login = findViewById(R.id.btn_login);
         txt_create = findViewById(R.id.txt_create);
+
         edt_usuario = findViewById(R.id.edt_usuario);
         edt_contra = findViewById(R.id.edt_contra);
+
         requestQueue = Volley.newRequestQueue(this);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 verificar();
-
             }
         });
         txt_create.setOnClickListener(new View.OnClickListener() {
@@ -67,9 +68,8 @@ public class Login extends AppCompatActivity {
 
         String url = Util.RUTA + "verificar_usuario.php?u_usuario=" + us +
                 "&u_contra=" + co;
-        url=url.replace(" ","%20");
 
-        jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, null,
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(),
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {

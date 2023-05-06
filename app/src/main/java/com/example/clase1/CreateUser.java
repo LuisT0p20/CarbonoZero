@@ -81,7 +81,7 @@ public class CreateUser extends AppCompatActivity {
                      "&u_apellido=" + ape +"&u_telefono=" + tel+"&u_usuario="+ usu+"&u_contra="+ con;
         url=url.replace(" ","%20");
 
-        jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url,null, this::onResponse, this::onErrorResponse);
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,new JSONObject(), this::onResponse, this::onErrorResponse);
         requestQueue.add(jsonObjectRequest);
     }
     public void onResponse(JSONObject response) {
