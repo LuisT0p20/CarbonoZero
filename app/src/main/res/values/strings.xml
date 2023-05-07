@@ -31,4 +31,6 @@
     <string name="box_cebada">Cebada</string>
     <string name="box_quinua">Quinua</string>
     <string name="box_avena">Avena</string>
+    <string name="text_iniciando">Iniciando...</string>
+    <string name="text_carga">Gracias, hemos registrado todas sus respuestas</string>
 </resources>

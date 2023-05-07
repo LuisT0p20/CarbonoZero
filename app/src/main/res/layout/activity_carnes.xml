@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#f0f3e2"
     tools:context=".Bebidas">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/carnes_pregunta"
         android:textAlignment="center"
-        android:textColor="#8C6C54"
+        android:textColor="#1b212e"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -23,11 +23,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="28dp"
         android:text="@string/Seleccione_repuesta"
-        android:textColor="#8C6C54"
-        android:layout_marginStart="20dp"
-        android:textSize="20sp" />
+        android:textColor="#95988e"
+        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="383dp"
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo_carne">
+            android:background="@drawable/redondeo">
 
             <CheckBox
                 android:id="@+id/box_pescado"
@@ -65,7 +65,7 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo_carne">
+            android:background="@drawable/redondeo">
 
             <CheckBox
                 android:id="@+id/box_pollo"
@@ -88,7 +88,7 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo_carne">
+            android:background="@drawable/redondeo">
 
             <CheckBox
                 android:id="@+id/box_res"
@@ -111,7 +111,7 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo_carne">
+            android:background="@drawable/redondeo">
             <CheckBox
                 android:id="@+id/box_cerdos"
                 android:layout_width="258dp"
@@ -133,7 +133,7 @@
             android:layout_height="80dp"
             android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/redondeo_carne">
+            android:background="@drawable/redondeo">
             <CheckBox
                 android:id="@+id/box_vegano"
                 android:layout_width="258dp"
@@ -164,7 +164,7 @@
             android:id="@+id/botonsiguiente2"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:background="@drawable/redondeo"
+            android:background="@drawable/redondeo_siguiente"
             android:src="@drawable/next"
             ></ImageButton>
     </LinearLayout>

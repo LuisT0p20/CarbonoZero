@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#e2eaf1"
     android:gravity="center"
-    android:background="#b8fd99"
+    android:orientation="vertical"
     tools:context=".PantallaCarga">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gracias, hemos registrado todas sus respuestas"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/text_carga"
+        android:textColor="#252c3a"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:gravity="center"
-        ></TextView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:lottie_rawRes="@raw/bicicleta"
+        android:layout_width="305dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/aire" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciando"
-        android:textSize="20sp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        ></TextView>
-</LinearLayout>
+        android:text="@string/text_iniciando"
+        android:textColor="#848d96"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animationView"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
