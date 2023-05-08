@@ -3,7 +3,9 @@ package com.example.clase1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -76,11 +78,20 @@ public class Login extends AppCompatActivity {
                         progreso.hide();
                         try {
                             String mensaje = response.getJSONArray("tb_usuario").getJSONObject(0).getString("mensaje");
+                            String id = response.getJSONArray("tb_usuario").getJSONObject(0).getString("id");
 
                             Toast.makeText(Login.this, mensaje, Toast.LENGTH_SHORT).show();
                             if(mensaje.contains("Bienvenido")){
                                 Intent i = new Intent(Login.this, MainActivity.class);
                                 startActivity(i);
+                                // Obtener instancia de SharedPreferences
+                                SharedPreferences sharedPreferences = getSharedPreferences("usuario_id", Context.MODE_PRIVATE);
+                                // Obtener editor
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                // Guardar
+                                editor.putString("id", id);
+                                // Aplicar cambios
+                                editor.apply();
                             }
                         } catch (Exception e) {
                             Toast.makeText(Login.this, e.toString(), Toast.LENGTH_LONG).show();
