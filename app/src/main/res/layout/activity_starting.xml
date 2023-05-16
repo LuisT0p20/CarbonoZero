@@ -1,58 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#14c3a2"
+    android:background="#D5F3E3"
     android:orientation="vertical"
     tools:context=".Starting">
 
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="80dp"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        app:cardCornerRadius="60dp"
-        android:layout_height="195dp">
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo" />
-    </androidx.cardview.widget.CardView>
-
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:gravity="center"
+        android:text="Bienvenido"
+        android:textSize="50sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginTop="68dp"
-        android:textSize="25sp"
-        android:text="CarbonoZero" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="315dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lifestyle" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
+        android:id="@+id/mensajesBienvenidos"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="40dp"
-        android:text="El cambio es ahora" />
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center"
-        android:layout_width="150dp"
-        app:cardCornerRadius="20dp"
-        android:layout_height="150dp">
-        <ImageView
-            android:id="@+id/loading"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#436A61"
-            android:src="@drawable/loading"
-            />
-    </androidx.cardview.widget.CardView>
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:gravity="center"
+        android:text="Bienvenido"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animationView"></TextView>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/botonIniciar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/redondeo_siguiente"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:onClick="pasarlogin"
+        android:text="Iniciar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensajesBienvenidos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
