@@ -7,32 +7,18 @@
     android:background="@drawable/fondo"
     android:orientation="vertical"
     tools:context=".CreateUser">
-    <LinearLayout
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/btn_cancel_create_user"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_atras"
-            android:background="@drawable/redondeo_siguiente" />
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:layout_gravity="end"
+            android:layout_gravity="center"
             android:layout_marginTop="68dp"
             android:fontFamily="sans-serif-medium"
             android:text="Registrarse"
             android:textColor="#1b212e"
             android:textSize="50dp"
             android:textStyle="bold" />
-    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +40,7 @@
             android:paddingStart="10dp"
             android:drawableStart="@drawable/ic_nombre"
             android:textSize="20dp"
-            android:textColor="#95988e"
+            android:textColor="#252525"
             android:hint="Ingresa nombres"
             android:background="@drawable/redondeo_input_registro"></EditText>
     </LinearLayout>
@@ -89,7 +75,7 @@
             android:paddingStart="10dp"
             android:drawableStart="@drawable/ic_telefono"
             android:textSize="20dp"
-            android:textColor="#95988e"
+            android:textColor="#252525"
             android:hint="Ingresa teléfono"
             android:background="@drawable/redondeo_input_registro"></EditText>
     </LinearLayout>
@@ -107,7 +93,7 @@
             android:paddingStart="10dp"
             android:drawableStart="@drawable/ic_nombre"
             android:textSize="20dp"
-            android:textColor="#95988e"
+            android:textColor="#252525"
             android:hint="Ingresa usuario"
             android:background="@drawable/redondeo_input_registro"></EditText>
     </LinearLayout>
@@ -125,7 +111,7 @@
             android:drawableStart="@drawable/ic_password"
             android:textSize="20dp"
             android:inputType="textPassword"
-            android:textColor="#95988e"
+            android:textColor="#252525"
             android:hint="Ingresa contraseña"
             android:background="@drawable/redondeo_input_registro"></EditText>
     </LinearLayout>
@@ -145,18 +131,28 @@
             android:drawableStart="@drawable/ic_password"
             android:textSize="20dp"
             android:inputType="textPassword"
-            android:textColor="#95988e"
+            android:textColor="#252525"
             android:hint="Confirma contraseña"
             android:background="@drawable/redondeo_input_registro"></EditText>
     </LinearLayout>
     <Button
-        android:id="@+id/btn_create_user"
+    android:id="@+id/btn_create_user"
+    android:layout_width="200dp"
+    android:elevation="4dp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center"
+    android:layout_height="50dp"
+    android:text="Registrar"
+    android:background="@drawable/redondeo_siguiente"
+    ></Button>
+    <Button
+        android:id="@+id/btn_cancel_create_user"
         android:layout_width="200dp"
         android:elevation="4dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:layout_height="50dp"
-        android:text="Registrar"
+        android:text="Cancelar"
         android:background="@drawable/redondeo_siguiente"
         ></Button>
 
