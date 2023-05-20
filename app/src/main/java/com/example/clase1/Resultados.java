@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
@@ -27,6 +28,7 @@ public class Resultados extends AppCompatActivity {
     JsonObjectRequest jsonObjectRequest;
     TextView txtResultado,nombre, fecha;
     Float consumo;
+    String nombre_usuario = "";
 
     // Obtener la fecha actual
     Date fechaActual = new Date();
@@ -51,9 +53,9 @@ public class Resultados extends AppCompatActivity {
 
         // Obtener los valores del título y contenido de la nota
         String id = sharedPreferences.getString("id", "");
-
+        mostrar_nombre(id);
         // Mostrar el título y el contenido de la nota en un TextView
-        nombre.setText(id);
+//        nombre.setText(id);
         // Formatear la fecha en el formato deseado
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         String fechaFormateada = formato.format(fechaActual);
@@ -61,6 +63,37 @@ public class Resultados extends AppCompatActivity {
         // Imprimir la fecha formateada en la consola
         fecha.setText(fechaFormateada);
         guardarResultado(id, resultado, fechaFormateada);
+    }
+
+    private void mostrar_nombre(String id) {
+        progreso = new ProgressDialog(this);
+        progreso.setMessage("Insertando");
+        progreso.hide();
+
+        String url = Util.RUTA + "mostrar_usuario.php?u_usuario=" + id;
+
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(),
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        progreso.hide();
+                        try {
+                            String nombre_usuario = response.getJSONArray("tb_usuario").getJSONObject(0).getString("mensaje");
+                            nombre.setText(nombre_usuario);
+
+                        } catch (Exception e) {
+                            Toast.makeText(Resultados.this, e.toString(), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        progreso.hide();
+                        Toast.makeText(Resultados.this, error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
+        requestQueue.add(jsonObjectRequest);
     }
 
     private void guardarResultado(String id, String resultado, String fecha){
