@@ -16,6 +16,7 @@
         android:fontFamily="@font/averia_gruesa_libre"
         android:layout_gravity="center"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="Bienvenido"
         android:textSize="50sp"
         android:textStyle="bold"></TextView>
@@ -36,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
+        android:textColor="@color/black"
         android:layout_margin="10dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/averia_gruesa_libre"
