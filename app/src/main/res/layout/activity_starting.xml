@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D5F3E3"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".Starting">
 
@@ -12,14 +12,13 @@
         android:id="@+id/textView6"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/averia_gruesa_libre"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_medium"
         android:gravity="center"
-        android:textColor="@color/black"
         android:text="Bienvenido"
-        android:textSize="50sp"
-        android:textStyle="bold"></TextView>
+        android:textColor="#595c47"
+        android:textSize="50sp"></TextView>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
@@ -37,21 +36,30 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/redondeo_siguiente"
+        android:textColor="#595c47"
+        android:layout_margin="15dp"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/averia_gruesa_libre"
+        android:fontFamily="@font/roboto_medium"
         android:text="Bienvenido"
         android:textSize="20sp"></TextView>
-
-    <Button
-        android:id="@+id/botonIniciar"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:background="@drawable/redondeo_siguiente"
-        android:fontFamily="@font/averia_gruesa_libre"
-        android:onClick="pasarlogin"
-        android:text="Iniciar"
-        android:textSize="20sp" />
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="150dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="#c4f1cd"
+            android:id="@+id/botonIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#595c47"
+            android:onClick="pasarlogin"
+            android:text="@string/iniciar"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>

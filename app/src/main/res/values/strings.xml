@@ -33,4 +33,5 @@
     <string name="box_avena">Avena</string>
     <string name="text_iniciando">Iniciando...</string>
     <string name="text_carga">Gracias, hemos registrado todas sus respuestas</string>
+    <string name="iniciar">Iniciar</string>
 </resources>

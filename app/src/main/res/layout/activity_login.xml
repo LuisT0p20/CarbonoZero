@@ -66,6 +66,7 @@
         android:layout_height="50dp"
         android:background="@drawable/redondeo"
         android:textStyle="bold"
+        android:textColor="#595c47"
         android:textSize="20sp"
         android:text="INGRESAR"
         ></Button>

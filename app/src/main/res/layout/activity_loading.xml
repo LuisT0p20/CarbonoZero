@@ -4,10 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2D9331"
+    android:background="#c0ffb1"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="CarbonoZero"
+        android:textColor="#51734a"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="El cambio es ahora"
+        android:textColor="#51734a"
+        android:textSize="20sp"
+        android:textStyle="bold" />
     <androidx.cardview.widget.CardView
         android:layout_marginTop="80dp"
         android:layout_gravity="center"
@@ -21,36 +45,17 @@
             android:src="@drawable/logo" />
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginTop="68dp"
-        android:textSize="25dp"
-        android:text="CarbonoZero" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="40dp"
-        android:text="El cambio es ahora" />
     <androidx.cardview.widget.CardView
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:layout_width="150dp"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="100dp"
         android:layout_height="150dp">
         <ImageView
             android:id="@+id/loading"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#436A61"
+            android:background="#c0ffb1"
             android:src="@drawable/loading"
             />
     </androidx.cardview.widget.CardView>
