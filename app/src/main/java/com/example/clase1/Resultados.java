@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.example.clase1.Utilidades.Util;
 
 import org.json.JSONObject;
@@ -26,9 +28,10 @@ public class Resultados extends AppCompatActivity {
     ProgressDialog progreso;
     RequestQueue requestQueue;
     JsonObjectRequest jsonObjectRequest;
-    TextView txtResultado,nombre, fecha;
+    TextView txtResultado,nombre, fecha, txtGravedad;
     Float consumo;
     String nombre_usuario = "";
+    ImageView imageResult;
 
     // Obtener la fecha actual
     Date fechaActual = new Date();
@@ -39,13 +42,29 @@ public class Resultados extends AppCompatActivity {
         txtResultado = findViewById(R.id.txtResultado);
         nombre = findViewById(R.id.nombre);
         fecha = findViewById(R.id.fecha);
-        requestQueue = Volley.newRequestQueue(this);
+        imageResult = findViewById(R.id.imageResult);
+        txtGravedad = findViewById(R.id.txtGravedad);
 
+
+        requestQueue = Volley.newRequestQueue(this);
 
         Bundle recibirDato = getIntent().getExtras();
         consumo = recibirDato.getFloat("keyDatos");
 
         String resultado = consumo.toString();
+
+        if (consumo >= 0 && consumo <= 10) {
+            Glide.with(this)
+                    .load(R.drawable.good)
+                    .into(imageResult);
+            txtGravedad.setText("No representas amenaza :)");
+        } else if (consumo > 10 && consumo <= 80) {
+            imageResult.setImageResource(R.drawable.medium);
+            txtGravedad.setText("Puedes mejorar -.-");
+        } else {
+            imageResult.setImageResource(R.drawable.bad);
+            txtGravedad.setText("Eres peligroso para la sociedad >.<");
+        }
 
         txtResultado.setText(resultado);
         // Obtener instancia de SharedPreferences
@@ -63,6 +82,7 @@ public class Resultados extends AppCompatActivity {
         // Imprimir la fecha formateada en la consola
         fecha.setText(fechaFormateada);
         guardarResultado(id, resultado, fechaFormateada);
+
     }
 
     private void mostrar_nombre(String id) {
