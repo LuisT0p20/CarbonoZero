@@ -27,114 +27,175 @@
         android:textColor="#1b212e"
         android:text="Crea tu cuenta y ayuda a reducir la emision del CO2"
         ></TextView>
-    <LinearLayout
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/u_nombre"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:paddingStart="10dp"
-            android:drawableStart="@drawable/ic_nombre"
-            android:textSize="20dp"
-            android:textColor="#252525"
-            android:hint="Ingresa nombres"
-            android:background="@drawable/redondeo_input_registro"></EditText>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
 
-        <EditText
-            android:id="@+id/u_apellido"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:paddingStart="10dp"
-            android:drawableStart="@drawable/ic_nombre"
-            android:textSize="20dp"
-            android:textColor="#95988e"
-            android:hint="Ingresa apellidos"
-            android:background="@drawable/redondeo_input_registro"></EditText>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-        <EditText
-            android:id="@+id/u_telefono"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="left">
 
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:paddingStart="10dp"
-            android:drawableStart="@drawable/ic_telefono"
-            android:textSize="20dp"
-            android:textColor="#252525"
-            android:hint="Ingresa teléfono"
-            android:background="@drawable/redondeo_input_registro"></EditText>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="left"
-        android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/u_dni"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_nombre"
+                    android:hint="Ingresa DNI"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
 
-        <EditText
-            android:id="@+id/u_usuario"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:paddingStart="10dp"
-            android:drawableStart="@drawable/ic_nombre"
-            android:textSize="20dp"
-            android:textColor="#252525"
-            android:hint="Ingresa usuario"
-            android:background="@drawable/redondeo_input_registro"></EditText>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
 
-        <EditText
-            android:id="@+id/u_contra"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:paddingStart="10dp"
-            android:drawableStart="@drawable/ic_password"
-            android:textSize="20dp"
-            android:inputType="textPassword"
-            android:textColor="#252525"
-            android:hint="Ingresa contraseña"
-            android:background="@drawable/redondeo_input_registro"></EditText>
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/u_nombre"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_nombre"
+                    android:hint="Ingresa nombres"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/u_apellido"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_nombre"
+                    android:hint="Ingresa apellidos"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/u_telefono"
+
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_telefono"
+                    android:hint="Ingresa teléfono"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:inputType="number"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="left">
+
+                <EditText
+                    android:id="@+id/u_correo"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_nombre"
+                    android:hint="Ingresa Correo"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="left">
+
+                <EditText
+                    android:id="@+id/u_usuario"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_nombre"
+                    android:hint="Ingresa usuario"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/u_contra"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_password"
+                    android:hint="Ingresa contraseña"
+                    android:inputType="textPassword"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/u_contra_confirm"
+
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/redondeo_input_registro"
+                    android:drawableStart="@drawable/ic_password"
+                    android:hint="Confirma contraseña"
+                    android:inputType="textPassword"
+                    android:paddingStart="10dp"
+                    android:textColor="#252525"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/u_contra_confirm"
 
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:paddingStart="10dp"
-            android:drawableStart="@drawable/ic_password"
-            android:textSize="20dp"
-            android:inputType="textPassword"
-            android:textColor="#252525"
-            android:hint="Confirma contraseña"
-            android:background="@drawable/redondeo_input_registro"></EditText>
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
     <Button
     android:id="@+id/btn_create_user"
     android:layout_width="200dp"
