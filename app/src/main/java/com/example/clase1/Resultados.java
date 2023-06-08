@@ -89,9 +89,7 @@ public class Resultados extends AppCompatActivity {
         progreso = new ProgressDialog(this);
         progreso.setMessage("Insertando");
         progreso.hide();
-
         String url = Util.RUTA + "mostrar_usuario.php?u_usuario=" + id;
-
         jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(),
                 new Response.Listener<JSONObject>() {
                     @Override

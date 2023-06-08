@@ -13,7 +13,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_medium"
         android:gravity="center"
         android:text="Bienvenido"
@@ -22,10 +22,10 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="310dp"
-        android:layout_height="250dp"
+        android:layout_width="277dp"
+        android:layout_height="218dp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/lifestyle" />
@@ -40,12 +40,12 @@
         android:background="@drawable/redondeo_siguiente"
         android:textColor="#595c47"
         android:layout_margin="15dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Bienvenido"
         android:textSize="20sp"></TextView>
     <androidx.cardview.widget.CardView
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         app:cardCornerRadius="150dp"
@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_medium"
-            android:textColor="#595c47"
+            android:textColor="@color/black"
             android:onClick="pasarlogin"
             android:text="@string/iniciar"
             android:textSize="20sp" />
