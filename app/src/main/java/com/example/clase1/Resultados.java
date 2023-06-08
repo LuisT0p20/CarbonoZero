@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -135,5 +136,10 @@ public class Resultados extends AppCompatActivity {
     public void onErrorResponse(VolleyError error) {
         progreso.hide();
         Toast.makeText(this, error.toString(), Toast.LENGTH_LONG).show();
+    }
+
+    public void irEstadisticas(View view) {
+        Intent intent = new Intent(this, Chart.class);
+        startActivity(intent);
     }
 }
