@@ -46,20 +46,9 @@
         android:textSize="20sp"
         android:text="Registro"
         ></TextView>
-
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_consumo"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                ></ListView>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent" />
+
 </LinearLayout>
