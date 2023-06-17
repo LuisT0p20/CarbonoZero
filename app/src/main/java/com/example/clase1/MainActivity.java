@@ -30,7 +30,8 @@ public class    MainActivity extends AppCompatActivity {
         cv_analisis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent j = new Intent(MainActivity.this, Chart.class);
+                startActivity(j);
             }
         });
         cv_recomendacion.setOnClickListener(new View.OnClickListener() {

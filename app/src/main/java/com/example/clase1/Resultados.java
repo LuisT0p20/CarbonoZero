@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +34,7 @@ public class Resultados extends AppCompatActivity {
     Float consumo;
     String nombre_usuario = "";
     ImageView imageResult;
+    Button btnbackMenu;
 
     // Obtener la fecha actual
     Date fechaActual = new Date();
@@ -45,6 +47,7 @@ public class Resultados extends AppCompatActivity {
         fecha = findViewById(R.id.fecha);
         imageResult = findViewById(R.id.imageResult);
         txtGravedad = findViewById(R.id.txtGravedad);
+        btnbackMenu = findViewById(R.id.btnbackMenu);
 
 
         requestQueue = Volley.newRequestQueue(this);
@@ -66,6 +69,13 @@ public class Resultados extends AppCompatActivity {
             imageResult.setImageResource(R.drawable.bad);
             txtGravedad.setText("Eres peligroso para la sociedad >.<");
         }
+        btnbackMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Resultados.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         txtResultado.setText(resultado);
         // Obtener instancia de SharedPreferences

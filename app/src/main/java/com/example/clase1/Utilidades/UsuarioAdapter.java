@@ -9,39 +9,41 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.clase1.R;
+import com.example.clase1.Utilidades.Usuario;
 
 import java.util.List;
 
-public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.UsuariosHolder>{
-    List<Usuario> listaUsuarios;
+public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.UsuarioViewHolder> {
+    private List<Usuario> listaUsuarios;
+
     public UsuarioAdapter(List<Usuario> listaUsuarios) {
         this.listaUsuarios = listaUsuarios;
     }
+
     @NonNull
     @Override
-    public UsuariosHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View vista = LayoutInflater.from(parent.getContext()).inflate(R.layout.usuarios_list, parent, false);
-        RecyclerView.LayoutParams layoutParams = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
-        vista.setLayoutParams(layoutParams);
-        return new UsuariosHolder(vista);
+    public UsuarioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(com.example.clase1.R.layout.usuarios_list, parent, false);
+        return new UsuarioViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull UsuarioAdapter.UsuariosHolder holder, int position) {
-        holder.txtNombre.setText( String.valueOf(listaUsuarios.get(position).getNombre()) );
-        holder.txtConsumo.setText( String.valueOf(listaUsuarios.get(position).getConsumo()) );
-        holder.txtFecha.setText( String.valueOf(listaUsuarios.get(position).getFecha()) );
+    public void onBindViewHolder(@NonNull UsuarioViewHolder holder, int position) {
+        Usuario usuario = listaUsuarios.get(position);
+        holder.txtNombre.setText(usuario.getNombre());
+        holder.txtConsumo.setText(String.valueOf(usuario.getConsumo()));
+        holder.txtFecha.setText(usuario.getFecha());
     }
 
     @Override
     public int getItemCount() {
-
         return listaUsuarios.size();
     }
 
-    public class UsuariosHolder extends RecyclerView.ViewHolder {
-        TextView txtNombre,txtConsumo,txtFecha;
-        public UsuariosHolder(@NonNull View itemView) {
+    public class UsuarioViewHolder extends RecyclerView.ViewHolder {
+        TextView txtNombre, txtConsumo, txtFecha;
+
+        public UsuarioViewHolder(@NonNull View itemView) {
             super(itemView);
             txtNombre = itemView.findViewById(R.id.uli_Nombre);
             txtConsumo = itemView.findViewById(R.id.uli_Consumo);
