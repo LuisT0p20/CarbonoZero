@@ -2,7 +2,7 @@ package com.example.clase1.Utilidades;
 
 public class Util {
 //public static final String RUTA = "http://192.168.100.78:8080/api/";
-public static final String RUTA = "http://192.168.43.207:8080/api/";
+public static final String RUTA = "http://172.16.180.167:8080/api/";
 //    public static final String RUTA = "http://172.16.145.116:8080/api/";
 //    public static final String RUTA = "http://172.16.165.55:8080/api/";
 }
