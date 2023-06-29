@@ -146,8 +146,8 @@ public class Resultados extends AppCompatActivity {
         Toast.makeText(this, error.toString(), Toast.LENGTH_LONG).show();
     }
 
-    public void irEstadisticas(View view) {
-        Intent intent = new Intent(this, Chart.class);
+    public void irMenu(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="#9A258080"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtTituloRecomendacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:text="Titulo"/>
+
+    <TextView
+        android:id="@+id/txtDescripcionRecomendacion"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginStart="10dp"
+        android:text="Contenido"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Por CarbonoZero"/>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:src="@drawable/logo"
+            android:layout_width="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
